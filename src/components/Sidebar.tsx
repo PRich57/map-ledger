@@ -7,7 +7,8 @@ import {
   FileSpreadsheet, 
   Upload,
   BarChart3,
-  Settings
+  Settings,
+  Network
 } from 'lucide-react';
 
 export default function Sidebar() {
@@ -90,6 +91,20 @@ export default function Sidebar() {
           >
             <BarChart3 className="mr-3 h-5 w-5" />
             GL Mapping
+          </NavLink>
+
+          <NavLink
+            to="/integrations"
+            className={({ isActive }) =>
+              `flex items-center px-3 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 ${
+                isActive 
+                  ? 'bg-primary-600 text-white shadow-md' 
+                  : 'text-gray-600 hover:bg-primary-50 hover:text-primary-600'
+              }`
+            }
+          >
+            <Network className="mr-3 h-5 w-5" />
+            Integrations
           </NavLink>
         </div>
 
