@@ -61,3 +61,30 @@ export interface Import {
   rowCount?: number;
   importedBy: string;
 }
+
+export interface SyncedAccount {
+  id: string;
+  accountNumber: string;
+  name: string;
+  type: 'asset' | 'liability' | 'equity' | 'revenue' | 'expense';
+  balance: number;
+  lastSync: string;
+  mapped: boolean;
+}
+
+export interface SyncHistory {
+  id: string;
+  timestamp: string;
+  status: 'success' | 'error' | 'warning';
+  message: string;
+  details?: string;
+  affectedAccounts: number;
+}
+
+export interface ConnectionStatus {
+  connected: boolean;
+  lastSync?: string;
+  company?: string;
+  environment?: string;
+  error?: string;
+}

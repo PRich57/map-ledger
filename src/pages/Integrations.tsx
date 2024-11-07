@@ -1,4 +1,3 @@
-import React from 'react';
 import IntegrationCard from '../components/integrations/IntegrationCard';
 import { Network } from 'lucide-react';
 
@@ -66,7 +65,7 @@ export default function Integrations() {
             id={integration.id}
             name={integration.name}
             description={integration.description}
-            status={integration.status}
+            status={integration.status as "available" | "coming_soon" | "beta"}
             icon={Network}
           />
         ))}

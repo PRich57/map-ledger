@@ -16,6 +16,7 @@ const Integrations = React.lazy(() => import('./pages/Integrations'));
 const QuickBooks = React.lazy(() => import('./pages/integrations/QuickBooks'));
 const SageIntacct = React.lazy(() => import('./pages/integrations/SageIntacct'));
 
+
 function App() {
   const { isAuthenticated } = useAuthStore();
 

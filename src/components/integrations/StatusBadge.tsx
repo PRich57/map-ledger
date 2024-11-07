@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface StatusBadgeProps {
   status: 'coming_soon' | 'beta';
 }
