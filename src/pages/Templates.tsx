@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useAuthStore } from '../store/authStore';
 import { useTemplateStore } from '../store/templateStore';
 import { Plus, ArrowLeft } from 'lucide-react';
