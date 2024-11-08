@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useAuthStore } from '../store/authStore';
 import { Plus, Users as UsersIcon } from 'lucide-react';
 import UserList from '../components/users/UserList';

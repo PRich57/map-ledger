@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useAuthStore } from '../store/authStore';
-import { Upload, FileSpreadsheet, AlertCircle, CheckCircle2, X, Download } from 'lucide-react';
+import { FileSpreadsheet, AlertCircle, CheckCircle2, X, Download } from 'lucide-react';
 import { Card, CardHeader, CardContent } from '../components/ui/Card';
 import { useImportStore } from '../store/importStore';
 import ImportHistory from '../components/import/ImportHistory';
