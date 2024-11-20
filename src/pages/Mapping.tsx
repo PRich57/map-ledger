@@ -1,4 +1,4 @@
-import RatioAllocationManager from '../components/mapping/RatioAllocationManager';
+import RatioAllocationManager from "../components/mapping/RatioAllocationManager";
 
 export default function Mapping() {
   return (
