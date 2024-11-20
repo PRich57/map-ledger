@@ -88,3 +88,43 @@ export interface ConnectionStatus {
   environment?: string;
   error?: string;
 }
+
+export interface RatioAllocation {
+  id: string;
+  name: string;
+  sourceAccount: {
+    id: string;
+    number: string;
+    description: string;
+  };
+  targetDatapoints: {
+    datapointId: string;
+    name: string;
+    ratioMetric: {
+      id: string;
+      name: string;
+      value: number;
+    };
+  }[];
+  effectiveDate: string;
+  status: 'active' | 'inactive';
+}
+
+export interface AllocationResult {
+  periodId: string;
+  sourceValue: number;
+  allocations: {
+    datapointId: string;
+    value: number;
+    percentage: number;
+  }[];
+}
+
+export interface OperationalMetric {
+  id: string;
+  name: string;
+  description: string;
+  type: string;
+  value: number;
+  period: string;
+}

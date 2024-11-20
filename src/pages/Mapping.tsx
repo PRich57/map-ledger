@@ -1,3 +1,5 @@
+import RatioAllocationManager from '../components/mapping/RatioAllocationManager';
+
 export default function Mapping() {
   return (
     <div className="py-6">
@@ -6,9 +8,7 @@ export default function Mapping() {
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="py-4">
-          <div className="bg-white shadow rounded-lg p-6">
-            <p className="text-gray-700">GL mapping interface will be implemented here.</p>
-          </div>
+          <RatioAllocationManager />
         </div>
       </div>
     </div>
